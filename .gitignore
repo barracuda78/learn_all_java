@@ -3,10 +3,7 @@ HELP.md
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
-!**/src/test/**/build/
-pg_data/
-/pg_data/
-**/pg_data/**
+!**/src/test/**/build/git
 
 ### STS ###
 .apt_generated
