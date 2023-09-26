@@ -18,9 +18,10 @@ public class ChainModifier implements Modifiable {
         AtomicReference<String> result = new AtomicReference<>();
         handlers.forEach(handler -> {
             if(handler.canProcess(alphabet)) {
-                result.accumulateAndGet(handler.process(alphabet), (string1, string2) -> string1);
+                result.accumulateAndGet(handler.process(alphabet), (string1, string2) -> string2);
             }
         });
+        String s = result.get();
         return result.get();
     }
 

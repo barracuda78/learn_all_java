@@ -5,7 +5,7 @@ import static pattern.behavioral.chain_of_responsibility.Alphabet.*;
 public class Main {
 
     private final Modifiable swithcModifiable = new SwithCaseModifier();
-    private final Modifiable chainModifiable = new SwithCaseModifier();
+    private final Modifiable chainModifiable = new ChainModifier();
 
     public static void main(String[] args) {
         Main main = new Main();
